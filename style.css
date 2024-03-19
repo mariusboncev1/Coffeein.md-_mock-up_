@@ -32,7 +32,7 @@ body {
     align-items: center;
     position: relative;
     bottom: 120px;
-    width: 1000px;
+    width: 1100px;
     height: 600px;
     margin-bottom: 30px;
     background-color: #1B1D1F;
@@ -76,10 +76,13 @@ body {
 .all-prod-btn, .available-btn {
     color: #FEF7EE;
     font-family: "DM Sans", sans-serif;
-    border-radius: 8px;
-    height: 30px;
-    width: 100px;
+    border-radius: 6px;
+    height: 37px;
+    width: 120px;
     border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .all-prod-btn {
@@ -88,6 +91,40 @@ body {
 
 .available-btn {
     background-color: transparent;
+}
+
+
+/* ! Coffee listings */
+
+#coffee-menu {
+    margin-top: 40px;
+    width: 900px;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 250px;
+    grid-template-columns: 280px 280px 280px;
+}
+
+/* Cappuccino */
+
+.cappuccino-img, .house-coffee-img, .espresso-img, .latte-img, .chocolate-img, .valentine-img {
+    height: 170px;
+    border-radius: 15px;
+    overflow:hidden;
+    object-fit: fill;
+}
+
+.cappuccino-title, .house-coffee-title, .espresso-title {
+    color: #FEF7EE;
+    font-family: "DM Sans", sans-serif;
+}
+
+.cappuccino-price {
+
+}
+
+.cappuccino-rating {
 
 }
 
@@ -103,6 +140,10 @@ body {
 
     .vector-img {
         height: 100px;
+    }
+
+    #coffee-menu {
+        width: 700px;
     }
 
 }
