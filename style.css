@@ -31,7 +31,7 @@ body {
     align-items: center;
     position: relative;
     margin-top: -150px;
-    margin-bottom: 50px;
+    
     width: 1050px;
     height: 930px;
     background-color: #1B1D1F;
@@ -179,6 +179,37 @@ body {
     font-weight: 600;
 }
 
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #FEF7EE;
+}
+
+.fa-instagram {
+    font-size: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.fa-facebook-f {
+    font-size: 28px;
+    width: 30px;
+    text-align: center;
+}
+
+.fa-instagram:hover, .fa-facebook-f:hover {
+    font-size: 34px;
+    transition: 0.2s;
+}
 
 /* ! QUERIES */
 
