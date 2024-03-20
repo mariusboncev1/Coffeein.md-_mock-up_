@@ -69,7 +69,7 @@ body {
 .selection-btns {
     display: flex;
     padding: 5px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .all-prod-btn, .available-btn {
@@ -97,7 +97,7 @@ body {
 }
 
 .all-prod-btn:focus, .available-btn:focus {
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 3px 3px 4px black;
 }
 
 
@@ -217,8 +217,17 @@ body {
 
 @media(max-width: 950px) {
     #content {
+        margin-top: -70px;
         width: 650px;
         height: 1160px;
+    }
+
+    .collection-p {
+        width: 70%;
+    }
+
+    .selection-btns {
+        gap: 30px;
     }
 
     #coffee-menu {
@@ -241,7 +250,7 @@ body {
     #content {
         margin-top: -40px;
         width: 370px;
-        height: 2320px;
+        height: 2210px;
     }
 
     .vector-img {
@@ -263,9 +272,9 @@ body {
     }
 
     #coffee-menu {
-        margin-top: 30px;
+        margin-top: 50px;
         width: 320px;
-        grid-template-rows: 330px 330px 330px 330px 330px 330px;
+        grid-template-rows: 310px 310px 310px 310px 310px 310px;
         grid-template-columns: 100px;
         
     }
