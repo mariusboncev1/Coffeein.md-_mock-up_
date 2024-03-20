@@ -11,8 +11,6 @@ body {
     
 }
 
-
-
 #background {
     display: flex;
     background-size: cover;
@@ -34,7 +32,7 @@ body {
     position: relative;
     margin-top: -150px;
     margin-bottom: 50px;
-    width: 1100px;
+    width: 1050px;
     height: 930px;
     background-color: #1B1D1F;
     border-radius: 20px;
@@ -66,7 +64,7 @@ body {
     font-weight: 500;
 }
 
-/* ! LABELS */
+/* ! BUTTONS */
 
 .selection-btns {
     display: flex;
@@ -94,6 +92,14 @@ body {
     background-color: transparent;
 }
 
+.available-btn:hover {
+    border: 1px solid #FEF7EE;
+}
+
+.all-prod-btn:focus, .available-btn:focus {
+    box-shadow: 2px 2px 4px black;
+}
+
 
 /* ! COFFEE MENU */
 
@@ -118,8 +124,6 @@ body {
 .cappuccino-img, .house-coffee-img, .espresso-img, .latte-img, .chocolate-img, .valentine-img {
     height: 170px;
     border-radius: 15px;
-    overflow:hidden;
-    object-fit: fill;
 }
 
 .coffee-type {
@@ -132,7 +136,7 @@ body {
     color: #FEF7EE;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .price-container {
@@ -178,11 +182,13 @@ body {
 
 /* ! QUERIES */
 
+/* 1100 PX */
+
 @media(max-width: 1100px) {
 
     #content {
-        width: 700px;
-        bottom: 90px;
+        width: 900px;
+        height: 860px;
     }
 
     .vector-img {
@@ -190,7 +196,81 @@ body {
     }
 
     #coffee-menu {
-        width: 700px;
+        grid-template-rows: 280px;
+        grid-template-columns: 280px 280px 280px;
+        width: 800px;
     }
 
+    .cappuccino-container, .house-coffee-container, .espresso-container, .latte-container, .chocolate-container, .valentine-container {
+        width: fit-content;
+    }
+
+    .cappuccino-img, .house-coffee-img, .espresso-img, .latte-img, .chocolate-img, .valentine-img {
+        height: auto;
+        max-width: 230px;
+    }
+
+}
+
+
+/* 900 PX */
+
+@media(max-width: 950px) {
+    #content {
+        width: 650px;
+        height: 1160px;
+    }
+
+    #coffee-menu {
+        width: 560px;
+        grid-template-rows: 280px 280px 280px;
+        grid-template-columns: 200px 265px;
+    }
+    
+    .cappuccino-img, .house-coffee-img, .espresso-img, .latte-img, .chocolate-img, .valentine-img {
+        height: auto;
+        max-width: 260px;
+    }
+
+}
+
+
+/* 430 PX */
+
+@media(max-width: 431px) {
+    #content {
+        margin-top: -40px;
+        width: 370px;
+        height: 2320px;
+    }
+
+    .vector-img {
+        margin-left: 110px;
+    }
+
+    .collection-p {
+        width: 80%;
+    }
+
+    /* buttons */
+
+    .selection-btns {
+        gap: 30px;
+    }
+
+    .all-prod-btn, .available-btn {
+        width: 130px;
+    }
+
+    #coffee-menu {
+        margin-top: 30px;
+        width: 320px;
+        grid-template-rows: 330px 330px 330px 330px 330px 330px;
+        grid-template-columns: 100px;
+        
+    }
+
+    .cappuccino-img, .house-coffee-img, .espresso-img, .latte-img, .chocolate-img, .valentine-img {
+        max-width: 320px;
+    }
 }
