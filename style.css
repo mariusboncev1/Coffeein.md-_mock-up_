@@ -250,7 +250,7 @@ body {
     #content {
         margin-top: -40px;
         width: 370px;
-        height: 2210px;
+        height: 2260px;
     }
 
     .vector-img {
@@ -274,7 +274,7 @@ body {
     #coffee-menu {
         margin-top: 50px;
         width: 320px;
-        grid-template-rows: 310px 310px 310px 310px 310px 310px;
+        grid-template-rows: 320px 320px 320px 320px 320px 320px;
         grid-template-columns: 100px;
         
     }
