@@ -1,6 +1,6 @@
 **[_COFEEIN.md_]** 'prototype'
 
-live site:https://coffee-listing-iota.vercel.app/
+live site: https://coffee-listing-iota.vercel.app/
 
 **_Local Coffee Shop - order page_**
 
