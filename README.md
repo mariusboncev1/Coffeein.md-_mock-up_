@@ -2,7 +2,7 @@
 
 live site: https://coffee-listing-iota.vercel.app/
 
-**_Local Coffee Shop - order page_**
+**_Local Coffee Shop - responsive order page_**
 
 *data storage yet not added along with js button activity*
 
